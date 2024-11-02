@@ -1,0 +1,258 @@
+/* Container for the navigation links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+  justify-content: center; /* Center the buttons */
+  padding: 20px;
+  background-color: #282c34; /* Dark background */
+}
+
+/* Style for each link */
+.nav-link {
+  color: #61dafb; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size for text */
+  padding: 12px 20px; /* Padding for button-like appearance */
+  margin: 10px; /* Margin for spacing between buttons */
+  border: 2px solid #61dafb; /* Button border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  display: flex; /* Flex display for icon and text alignment */
+  align-items: center; /* Center icon and text vertically */
+}
+
+/* Increase icon size */
+.nav-link .icon {
+  font-size: 24px; /* Adjust this value to increase icon size */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  background-color: rgba(8, 223, 243, 0); /* Light blue background on hover */
+  color: #fff; /* Change text color on hover */
+  border-color: #3d03fa; /* Change border color on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+  font-weight: bold; /* Bold text for active link */
+  background-color: rgba(0, 0, 0, 0); /* Background color for active link */
+  border-color: #010200; /* Highlight active link border */
+}
+
+/* Container for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Center the links vertically */
+  background-color: hsl(37, 94%, 49%); /* Dark background */
+  padding: 10px 0; /* Vertical padding for the bar */
+  border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Style for each link */
+.nav-link {
+  color: #56deeb; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size for text */
+  padding: 12px 20px; /* Padding for button-like appearance */
+  margin: 0 15px; /* Margin for spacing between buttons */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  display: flex; /* Flex display for icon and text alignment */
+  align-items: center; /* Center icon and text vertically */
+}
+
+/* Increase icon size and color */
+.nav-link .icon {
+  font-size: 30px; /* Icon size */
+  color: #04f9f5; /* Icon color */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+  background-color: rgba(6, 41, 238, 0.3); /* Light blue background on hover */
+  color: #d2f704; /* Change text color on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+  font-weight: bold; /* Bold text for active link */
+  background-color: rgba(4, 8, 226, 0.505); /* Background color for active link */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+  }
+  .nav-link {
+      margin: 5px 0; /* Adjust margin for stacked links */
+  }
+}
+
+/* Optional: Body style to prevent content from hiding behind fixed navbar */
+/* Styles for the body */
+body {
+  margin: 0; /* Remove default margin */
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Additional styling for the main content */
+.main-content {
+  text-align: center; /* Center text within the content */
+}
+
+.add-to-cart-btn {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for spacing */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.product-item {
+  margin-bottom: 20px; /* Space between each product item */
+}
+
+.product-info {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between product info and button */
+}
+
+.add-to-cart-btn {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for spacing */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  margin-left: 10px; /* Space between price and button */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Style for the list item */
+li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between content */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Padding for the item */
+  border-bottom: 1px solid #e0e0e0; /* Bottom border */
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for list item */
+li:hover {
+  background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Style for buttons */
+button {
+  background-color: #0644ef; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 12px; /* Padding for the button */
+  margin-left: 5px; /* Space between buttons */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #050069; /* Darker shade on hover */
+}
+
+/* Ensure buttons are aligned in a row */
+li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Optional: If you want to ensure spacing between buttons */
+li > button {
+  display: inline-block; /* Ensure buttons are inline */
+}
+
+/* Style for quantity display */
+.quantity-display {
+  font-weight: bold; /* Bold font for quantity */
+  margin: 0 10px; /* Add spacing around the quantity */
+  display: inline-flex; /* Align with buttons */
+  align-items: center; /* Center vertically */
+}
+
+/********************/
+/* Ensure buttons are aligned properly */
+li {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  list-style: none; /* Remove bullet points from list */
+}
+
+.quantity-display {
+  font-weight: bold; /* Bold font for quantity */
+  margin-right: 10px; /* Space between quantity and button */
+}
+
+.add-to-cart-btn {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for spacing */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+
+
